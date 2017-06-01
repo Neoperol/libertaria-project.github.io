@@ -15,10 +15,10 @@ keep_files:
 
 # Site settings
 title: LIBERTARIA
-subtitle: "A free HTML5 agency template"
+subtitle: "Building the technology of the future - today"
 url: "http://libertaria-project.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
