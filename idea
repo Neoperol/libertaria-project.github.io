@@ -1,0 +1,18 @@
+---
+layout: page
+title: Idea.
+permalink: /idea/
+---
+
+    <!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1> Libertaria - The Idea</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
