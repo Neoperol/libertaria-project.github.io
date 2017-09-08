@@ -473,17 +473,6 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 6px;
   position: relative;
 }
-#portfolio-work .block .portfolio-contant ul li:hover .overly {
-  opacity: 1;
-}
-#portfolio-work .block .portfolio-contant ul li:hover .position-center {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
 #portfolio-work .block .portfolio-contant ul li a {
   display: block;
   color: #fff;
@@ -511,25 +500,62 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  opacity: 0;
-  -webkit-transition: .3s all;
-  -o-transition: .3s all;
-  transition: .3s all;
   text-align: center;
 }
-#portfolio-work .block .portfolio-contant .position-center {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translate(0%, 50%);
-  -moz-transform: translate(0%, 50%);
-  -ms-transform: translate(0%, 50%);
-  transform: translate(0%, 50%);
-  -webkit-transition: .5s all;
-  -o-transition: .5s all;
-  transition: .5s all;
+
+/* For desktop display:
+ - Hide the slide
+ - Set 90% black fill 
+ - Set the sliding transformation on hover 
+ */
+@media only screen and (min-width: 768px) {
+  #portfolio-work .block .portfolio-contant .overly {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+  }
+  #portfolio-work .block .portfolio-contant ul li:hover .overly {
+    opacity: 1;
+  }
+  #portfolio-work .block .portfolio-contant ul li:hover .position-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  #portfolio-work .block .portfolio-contant .position-center {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translate(0%, 50%);
+    -moz-transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+    transform: translate(0%, 50%);
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+  }
 }
+
+/* For mobile display:
+ - Remove the animation
+ - Set 70% black fill
+ */
+@media only screen and (max-width: 767px) {
+  #portfolio-work .block .portfolio-contant .overly {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #portfolio-work .block .portfolio-contant .position-center {
+    position: absolute;
+    top: 30%; /* manually picked to look okayish */
+  }
+}
+
 #portfolio-work .block .mix {
   display: none;
 }
