@@ -252,23 +252,33 @@ font header .navbar-default .navbar-nav li a:hover {
   backface-visibility: hidden;
   padding: 100px 0;
 }
-/*--
-  Fade background for mobile clients and make the text black
---*/
+
 @media only screen and (max-width: 767px) {
+  /*--
+    Fade background for mobile clients and make the text black
+  --*/
   #feature {
     background-color: hsla(0,0%,100%,0.8);
     background-blend-mode: overlay;
   }
 
-/*--
- Black color for mobile clients, after everything to override
- --*/
+  /*--
+    Black color for mobile clients, after everything to override
+  --*/
   .section-title h2, .section-title p, 
   .service-item h4, .service-item p,
   #feature h2, #feature p, #intro p {
     color: #000 !important;
   }
+
+  /*--
+    Additional padding for vision section 
+  --*/
+  .section-title {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
 }
 
 #feature h2 {
