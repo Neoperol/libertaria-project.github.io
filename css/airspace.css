@@ -260,8 +260,14 @@ font header .navbar-default .navbar-nav li a:hover {
     background-color: hsla(0,0%,100%,0.8);
     background-blend-mode: overlay;
   }
-  #feature > div > div > div > p {
-    color: #000;
+
+/*--
+ Black color for mobile clients, after everything to override
+ --*/
+  .section-title h2, .section-title p, 
+  .service-item h4, .service-item p,
+  #feature h2, #feature p, #intro p {
+    color: #000 !important;
   }
 }
 
